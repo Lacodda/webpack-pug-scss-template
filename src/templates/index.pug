@@ -1,12 +1,10 @@
 extends layouts/main
 
 block head_end
-    link(rel="stylesheet" href="/assets/css/main.min.css")
 
 block content
     .page__container
-        img.page__logo(src="/assets/img/lyrn.svg" alt=header)
+        img.page__logo(src=require("../img/lyrn.svg") alt=header)
         h1.page__header= header
 
 block body_end
-    script(type="text/javascript" src="/assets/js/main.min.js")
